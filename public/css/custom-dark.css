@@ -1,0 +1,84 @@
+/* File: public/css/custom-dark.css */
+
+/* CSS ini hanya akan aktif jika tag <body> memiliki class="dark" */
+
+/* Latar Belakang & Teks Global */
+
+/* Sidebar */
+body.dark .sidebar {
+    background: #0f1724; /* Gelap untuk sidebar */
+    border-right: 1px solid rgba(255,255,255,0.03);
+}
+/* body.dark .sidebar-link, body.dark .sidebar-header {
+    color: #9aa6b2;
+} */
+
+body.dark #sidebar.sidebar .sidebar-content {
+    background: #273142;
+    color: #FFFFFF !important;
+}
+
+body.dark #sidebar.sidebar a.sidebar-link {
+    background: #273142;
+    color: #FFFFFF !important;       
+}
+body.dark .sidebar-link:hover, body.dark .sidebar-item.active .sidebar-link:hover {
+    background: rgba(255,255,255,0.02);
+    color: #fff;
+}
+body.dark .sidebar-item.active .sidebar-link, body.dark .sidebar-item.active > .sidebar-link:hover {
+    background: rgba(13,110,253,0.18); /* aksen lembut */
+    color: #fff;
+}
+
+/* Navbar & Main Content */
+body.dark, body.dark .main {
+    background: #1B2431;
+}
+body.dark .navbar {
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+    background-color: #273142;
+}
+
+body.dark .navbar span.avatar{
+    color: #ffffff;
+}
+
+body.dark .navbar a.nav-link.dropdown-toggle::after{
+    color: #ffffff;
+}
+
+/* Card */
+body.dark .card {
+    background: #0f1724;
+    border: 1px solid rgba(255,255,255,0.03);
+}
+body.dark .card-header {
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+body.dark .card-title, body.dark h1, body.dark h2, body.dark h3, body.dark h4, body.dark h5 {
+    color: #f8fafc; /* Teks judul terang */
+}
+
+/* Tabel */
+body.dark .table {
+    color: #cbd5e1;
+}
+body.dark .table td, body.dark .table th {
+    border-top: 1px solid rgba(255,255,255,0.03);
+}
+body.dark .table thead th {
+    border-bottom: 2px solid rgba(255,255,255,0.03);
+}
+
+/* Input Form */
+body.dark .form-control, body.dark .form-select {
+    background-color: #0b1220;
+    border-color: rgba(255,255,255,0.03);
+    color: #f8fafc;
+}
+body.dark .form-control:focus {
+    background-color: #0b1220;
+    border-color: rgba(13,110,253,0.5);
+    color: #f8fafc;
+}

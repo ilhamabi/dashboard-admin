@@ -1,0 +1,47 @@
+/* File: public/css/custom-light.css */
+/* Semua aturan di sini akan menimpa gaya default dari app.css */
+
+.main {
+    background-color: #F5F6FA;  /* Pindahkan warna latar belakang utama ke sini */
+}
+
+/* --- Contoh Styling untuk Sidebar Light Mode --- */
+#sidebar.sidebar {
+    background-color: #f8f9fa;       /* Ganti: Warna background sidebar light Anda */
+    border-right: 1px solid #dee2e6;  /* Ganti: Warna border light Anda */
+}
+
+#sidebar.sidebar .sidebar-content, a.sidebar-link {
+    background: #FFFFFF; /* Membuat background-nya transparan agar warna induk terlihat */
+}
+
+
+/* Menargetkan link di dalam sidebar secara spesifik */
+#sidebar.sidebar .sidebar-link {
+    color: #495057;                  /* Ganti: Warna teks link light Anda */
+}
+
+/* Menargetkan link saat di-hover */
+#sidebar.sidebar .sidebar-link:hover {
+    background-color: #e9ecef;       /* Ganti: Warna hover light Anda */
+    color: #000;                     /* Ganti: Warna teks saat hover light Anda */
+}
+
+/* Menargetkan link yang sedang aktif */
+#sidebar.sidebar .sidebar-item.active .sidebar-link,
+#sidebar.sidebar .sidebar-item.active > .sidebar-link:hover {
+    background-color: #3b7ddd;       /* Ganti: Warna aksen/aktif light Anda */
+    color: #ffffff;
+}
+
+/* Menargetkan header di dalam sidebar (misal: "Pages") */
+#sidebar.sidebar .sidebar-header {
+    color: #6c757d;                  /* Ganti: Warna teks header light Anda */
+}
+
+/* --- Contoh Styling untuk Navbar Light Mode --- */
+.navbar {
+    background-color: #ffffff; /* Ganti dengan warna background navbar light Anda */
+    border-bottom: 1px solid #dee2e6;
+}
+
