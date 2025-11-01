@@ -7,6 +7,8 @@ Route::get('/', function () {
     return view('dashboard');
 });
 
+Route::get('search', [SearchController::class, 'index'])->name('search');
+
 
 Route::get('/login', function () {
     return view('login');

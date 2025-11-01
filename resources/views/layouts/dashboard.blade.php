@@ -14,7 +14,7 @@
 
 	<link rel="canonical" href="https://demo-basic.adminkit.io/" />
 
-	<title>AdminKit Demo - Bootstrap 5 Admin Template</title>
+	<title>Dashboard</title>
 
 	{{-- @vite(['resources/css/app.css']) --}}
     <link href=" {{  asset('css/app.css') }}" rel="stylesheet">
@@ -40,7 +40,7 @@
 				</div>
 			</main>
 
-			@include('partials.footer')
+			{{-- @include('partials.footer') --}}
 		</div>
 	</div>
 

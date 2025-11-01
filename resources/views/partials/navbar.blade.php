@@ -3,7 +3,26 @@
           			<i class="hamburger align-self-center"></i>
         		</a>
 
-				<div class="navbar-collapse collapse">
+				<div class="flex-grow-1 d-none d-sm-block"></div>
+
+				<form class="d-none d-sm-inline-block mx-1" action="#" method="GET">
+					<div class="position-relative px-1">
+						<!-- Ikon kaca pembesar (Feather) -->
+						<i data-feather="search" class="position-absolute top-50 translate-middle-y text-secondary search-icon"
+						style="left: .85rem; width: 1rem; height: 1rem;"></i>
+
+						<!-- Input rounded-pill dengan warna gelap -->
+						<input type="text" name="q"
+							class="form-control form-control-lg rounded-pill ps-5"
+							placeholder="Search"
+							{{-- style="min-width:280px; background:#2A2E34; color:#ECF0F1;"> --}}
+							>
+					</div>
+				</form>
+				
+				<div class="flex-grow-1 d-none d-sm-block"></div>
+
+				<div class="navbar-collapse collapse" style="flex-basis:auto; flex-grow:0;">
 					<ul class="navbar-nav navbar-align">
                         <li class="nav-item">
                             <a class="nav-icon js-theme-toggle" href="#" aria-label="Toggle theme">
@@ -142,24 +161,35 @@
 								</div>
 							</div>
 						</li>
-						<li class="nav-item dropdown text-center">
-  <!-- Mobile: hanya ikon gear -->
-  <a class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#" data-bs-toggle="dropdown">
-    <i class="align-middle" data-feather="settings"></i>
+						<!-- 1. File blade / html -->
+<li class="nav-item dropdown user-dd">
+  {{-- MOBILE : only gear -----------------------}}
+  <a class="nav-icon dropdown-toggle d-inline-block d-sm-none"
+     href="#" data-bs-toggle="dropdown">
+    <i data-feather="settings"></i>
   </a>
 
-  <!-- Desktop: avatar saja, tanpa teks Moni Roy -->
-  <a class="nav-link dropdown-toggle d-none d-sm-inline-block profile-dropdown" href="#" data-bs-toggle="dropdown">
-    <img src="{{ asset('img/avatar.png') }}"
-         class="avatar img-fluid rounded-circle mb-1"
-         alt="Moni Roy"
-         width="40"
-         height="40">
-    <div class="small text-muted">Admin</div>
-  </a>
+  {{-- DESKTOP : avatar + texts + round arrow --}}
+  <div class="d-none d-sm-flex align-items-center">
+    {{-- avatar ----------------}}
+    <span class="avatar-box">
+      <img src="{{ asset('img/avatar.png') }}" alt="Moni Roy">
+    </span>
 
-  <!-- Dropdown menu tetap sama -->
-  <div class="dropdown-menu dropdown-menu-end">
+    {{-- stacked texts --------}}
+    <div class="info mx-2">
+      <div class="name">Moni Roy</div>
+      <div class="role">Admin</div>
+    </div>
+
+    {{-- round arrow button --}}
+    <a href="#" class="arrow-circle" data-bs-toggle="dropdown-menu" data-bs-target="#userDropdown">
+      <i data-feather="chevron-down"></i>
+    </a>
+  </div>
+
+  {{-- dropdown menu ---------}}
+  <div class="dropdown-menu dropdown-menu-end" id="userDropdown">
     <a class="dropdown-item" href="pages-profile.html">
       <i class="align-middle me-1" data-feather="user"></i> Profile
     </a>

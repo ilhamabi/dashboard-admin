@@ -5,31 +5,6 @@
 /* Latar Belakang & Teks Global */
 
 /* Sidebar */
-body.dark .sidebar {
-    background: #0f1724; /* Gelap untuk sidebar */
-    border-right: 1px solid rgba(255,255,255,0.03);
-}
-/* body.dark .sidebar-link, body.dark .sidebar-header {
-    color: #9aa6b2;
-} */
-
-body.dark #sidebar.sidebar .sidebar-content {
-    background: #273142;
-    color: #FFFFFF !important;
-}
-
-body.dark #sidebar.sidebar a.sidebar-link {
-    background: #273142;
-    color: #FFFFFF !important;       
-}
-body.dark .sidebar-link:hover, body.dark .sidebar-item.active .sidebar-link:hover {
-    background: rgba(255,255,255,0.02);
-    color: #fff;
-}
-body.dark .sidebar-item.active .sidebar-link, body.dark .sidebar-item.active > .sidebar-link:hover {
-    background: rgba(13,110,253,0.18); /* aksen lembut */
-    color: #fff;
-}
 
 /* Navbar & Main Content */
 body.dark, body.dark .main {
@@ -81,4 +56,101 @@ body.dark .form-control:focus {
     background-color: #0b1220;
     border-color: rgba(13,110,253,0.5);
     color: #f8fafc;
+}
+
+/* ---------- avatar ---------- */
+body.dark .user-dd .avatar-box{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #e9ecef;          /* grey circle */
+  padding: 3px;
+}
+body.dark .user-dd .avatar-box img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* ---------- texts ------------ */
+body.dark .user-dd .info .name{
+  font-size: .90rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #ffffff;
+}
+body.dark .user-dd .info .role{
+  font-size: .75rem;
+  color: #ffffff;
+}
+
+/* ---------- round arrow ------ */
+body.dark .user-dd .arrow-circle{
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #f3f4f6;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #495057;
+  text-decoration: none;
+}
+body.dark .user-dd .arrow-circle:hover{
+  background: #e5e7eb;
+}
+body.dark .user-dd .arrow-circle svg{
+  width: 16px;
+  height: 16px;
+}
+
+/* 1. Kill any residual gradient or image */
+body.dark .sidebar,
+body.dark .sidebar-content,
+body.dark .js-sidebar,
+body.dark .simplebar-content,
+body.dark .simplebar-scroll-content,
+body.dark #sidebar {
+    background-color: #273142 !important;
+    background-image: none !important;
+}
+
+/* 2. Make sure the wrapper also white */
+body.dark .sidebar-nav,
+body.dark .sidebar-nav * {
+    background-color: transparent !important;
+}
+
+/* 3. Optional – remove shadow that can look grey */
+body.dark .sidebar {
+    box-shadow: none !important;
+}
+
+
+body.dark .sidebar-link,
+body.dark .sidebar-link span,
+body.dark .sidebar-link i,
+body.dark .sidebar-header {
+    color: #ffffff !important;   /* abu-abu gelap */
+}
+
+/* 2. SAAT DI-HOVER */
+body.dark .sidebar-link:hover,
+body.dark .sidebar-link:hover span,
+body.dark .sidebar-link:hover i {
+    color: #ffffff !important;    /* putih di atas biru */
+}
+
+/* 3. MENU AKTIF */
+body.dark .sidebar-item.active .sidebar-link,
+body.dark .sidebar-item.active .sidebar-link span,
+body.dark .sidebar-item.active .sidebar-link i {
+    color: #ffffff !important;
+    background-color: #4f7ad6 !important;
+}
+
+body.dark .sidebar-link svg.feather {
+    display: none;
 }

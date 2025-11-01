@@ -7,103 +7,112 @@
 				<!-- Logo untuk Dark Mode (tersembunyi secara default) -->
 				<img src="{{ asset('img/logo-dark.png') }}" id="logo-dark" alt="Logo Dark" class="img-fluid d-none" width="132">
 			</a>
+			<ul class="sidebar-nav">
+				<!-- ===== TOP SECTION ===== -->
+				<li class="sidebar-item active">
+					<a class="sidebar-link" href="index.html">
+						<span class="capsule">
+							<i class="icon-box align-middle" data-feather="home" width="18"></i>
+							<span class="txt align-middle ms-2">Dashboard</span>
+						</span>
+					</a>
+				</li>
 
-				<ul class="sidebar-nav">
-					<li class="sidebar-header">
-						Pages
-					</li>
+				<li class="sidebar-item">
+					<a class="sidebar-link" href="pages-profile.html">
+					<i class="align-middle" data-feather="box" width="18"></i>
+					<span class="align-middle ms-2">Product</span>
+					</a>
+				</li>
 
-					<li class="sidebar-item active">
-						<a class="sidebar-link" href="index.html">
-              <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Dashboard</span>
-            </a>
-					</li>
+				<li class="sidebar-item">
+					<a class="sidebar-link" href="pages-sign-in.html">
+					<i class="align-middle" data-feather="heart" width="18"></i>
+					<span class="align-middle ms-2">Favorites</span>
+					</a>
+				</li>
 
-					<li class="sidebar-item">
-						<a class="sidebar-link" href="pages-profile.html">
-              <i class="align-middle" data-feather="user"></i> <span class="align-middle">Profile</span>
-            </a>
-					</li>
+				<li class="sidebar-item">
+					<a class="sidebar-link" href="pages-sign-up.html">
+					<i class="align-middle" data-feather="message-square" width="18"></i>
+					<span class="align-middle ms-2">Messenger</span>
+					</a>
+				</li>
 
-					<li class="sidebar-item">
-						<a class="sidebar-link" href="pages-sign-in.html">
-              <i class="align-middle" data-feather="log-in"></i> <span class="align-middle">Sign In</span>
-            </a>
-					</li>
+				<li class="sidebar-item">
+					<a class="sidebar-link" href="pages-blank.html">
+					<i class="align-middle" data-feather="list" width="18"></i>
+					<span class="align-middle ms-2">Order Lists</span>
+					</a>
+				</li>
 
-					<li class="sidebar-item">
-						<a class="sidebar-link" href="pages-sign-up.html">
-              <i class="align-middle" data-feather="user-plus"></i> <span class="align-middle">Sign Up</span>
-            </a>
-					</li>
+				<li class="sidebar-item">
+					<a class="sidebar-link" href="pages-blank.html">
+					<i class="align-middle" data-feather="shopping-bag" width="18"></i>
+					<span class="align-middle ms-2">E-commerce</span>
+					</a>
+				</li>
 
-					<li class="sidebar-item">
-						<a class="sidebar-link" href="pages-blank.html">
-              <i class="align-middle" data-feather="book"></i> <span class="align-middle">Blank</span>
-            </a>
-					</li>
+				<!-- ===== SECTION TITLE ===== -->
+				<li class="sidebar-header text-uppercase">Pages</li>
 
-					<li class="sidebar-header">
-						Tools & Components
-					</li>
+				<!-- ===== BOTTOM SECTION ===== -->
+				<li class="sidebar-item">
+					<a class="sidebar-link" href="ui-buttons.html">
+					<i class="align-middle" data-feather="folder" width="18"></i>
+					<span class="align-middle ms-2">File Manager</span>
+					</a>
+				</li>
 
-					<li class="sidebar-item">
-						<a class="sidebar-link" href="ui-buttons.html">
-              <i class="align-middle" data-feather="square"></i> <span class="align-middle">Buttons</span>
-            </a>
-					</li>
+				<li class="sidebar-item">
+					<a class="sidebar-link" href="ui-forms.html">
+					<i class="align-middle" data-feather="calendar" width="18"></i>
+					<span class="align-middle ms-2">Calendar</span>
+					</a>
+				</li>
 
-					<li class="sidebar-item">
-						<a class="sidebar-link" href="ui-forms.html">
-              <i class="align-middle" data-feather="check-square"></i> <span class="align-middle">Forms</span>
-            </a>
-					</li>
+				<li class="sidebar-item">
+					<a class="sidebar-link" href="ui-cards.html">
+					<i class="align-middle" data-feather="rss" width="18"></i>
+					<span class="align-middle ms-2">Feed</span>
+					</a>
+				</li>
 
-					<li class="sidebar-item">
-						<a class="sidebar-link" href="ui-cards.html">
-              <i class="align-middle" data-feather="grid"></i> <span class="align-middle">Cards</span>
-            </a>
-					</li>
+				<li class="sidebar-item">
+					<a class="sidebar-link" href="ui-typography.html">
+					<i class="align-middle" data-feather="check-square" width="18"></i>
+					<span class="align-middle ms-2">To Do</span>
+					</a>
+				</li>
 
-					<li class="sidebar-item">
-						<a class="sidebar-link" href="ui-typography.html">
-              <i class="align-middle" data-feather="align-left"></i> <span class="align-middle">Typography</span>
-            </a>
-					</li>
+				<li class="sidebar-item">
+					<a class="sidebar-link" href="icons-feather.html">
+					<i class="align-middle" data-feather="users" width="18"></i>
+					<span class="align-middle ms-2">Contact</span>
+					</a>
+				</li>
 
-					<li class="sidebar-item">
-						<a class="sidebar-link" href="icons-feather.html">
-              <i class="align-middle" data-feather="coffee"></i> <span class="align-middle">Icons</span>
-            </a>
-					</li>
+				<li class="sidebar-item">
+					<a class="sidebar-link" href="icons-feather.html">
+					<i class="align-middle" data-feather="file-text" width="18"></i>
+					<span class="align-middle ms-2">Invoice</span>
+					</a>
+				</li>
 
-					<li class="sidebar-header">
-						Plugins & Addons
-					</li>
+				<!-- ===== SETTINGS & LOGOUT ===== -->
+				<li class="sidebar-item">
+					<a class="sidebar-link" href="charts-chartjs.html">
+					<i class="align-middle" data-feather="settings" width="18"></i>
+					<span class="align-middle ms-2">Settings</span>
+					</a>
+				</li>
 
-					<li class="sidebar-item">
-						<a class="sidebar-link" href="charts-chartjs.html">
-              <i class="align-middle" data-feather="bar-chart-2"></i> <span class="align-middle">Charts</span>
-            </a>
-					</li>
-
-					<li class="sidebar-item">
-						<a class="sidebar-link" href="maps-google.html">
-              <i class="align-middle" data-feather="map"></i> <span class="align-middle">Maps</span>
-            </a>
-					</li>
-				</ul>
-
-				<div class="sidebar-cta">
-					<div class="sidebar-cta-content">
-						<strong class="d-inline-block mb-2">Upgrade to Pro</strong>
-						<div class="mb-3 text-sm">
-							Are you looking for more components? Check out our premium version.
-						</div>
-						<div class="d-grid">
-							<a href="upgrade-to-pro.html" class="btn btn-primary">Upgrade to Pro</a>
-						</div>
-					</div>
-				</div>
+				<li class="sidebar-item">
+					<a class="sidebar-link" href="maps-google.html">
+					<i class="align-middle" data-feather="log-out" width="18"></i>
+					<span class="align-middle ms-2">Log Out</span>
+					</a>
+				</li>
+			</ul>
 		</div>
 	</nav>

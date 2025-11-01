@@ -1,271 +1,160 @@
 @extends('layouts.dashboard')
 
 @section('content')
-    {{-- Di sinilah Anda akan menempel semua konten utama dari desain Figma --}}
-   					<h1 class="h3 mb-3"><strong>Analytics</strong> Dashboard</h1>
+<h1>Dashboard</h1>
+<!-- ===== STAT CARD ===== -->
+<div class="row">
+  <div class="col-12 col-sm-6 col-lg mb-4">
+    <div class="card h-100 border-0 shadow-sm stat-card">
+      <div class="card-body d-flex align-items-center">
+        <!-- Icon -->
+        <div class="flex-shrink-0 me-3">
+          <span class="avatar avatar-lg bg-soft-primary text-primary">
+            <i data-feather="users"></i>
+          </span>
+        </div>
 
-					<div class="row">
-						<div class="col-xl-6 col-xxl-5 d-flex">
-							<div class="w-100">
-								<div class="row">
-									<div class="col-sm-6">
-										<div class="card">
-											<div class="card-body">
-												<div class="row">
-													<div class="col mt-0">
-														<h5 class="card-title">Sales</h5>
-													</div>
+        <!-- Text -->
+        <div class="flex-grow-1">
+          <p class="mb-1 text-muted">Total User</p>
+          <h3 class="mb-1">40,689</h3>
+          <small class="text-success">
+            <i data-feather="trending-up" width="14"></i>
+            <strong>8.5%</strong> Up from yesterday
+          </small>
+        </div>
+      </div>
+    </div>
+  </div>
 
-													<div class="col-auto">
-														<div class="stat text-primary">
-															<i class="align-middle" data-feather="truck"></i>
-														</div>
-													</div>
-												</div>
-												<h1 class="mt-1 mb-3">2.382</h1>
-												<div class="mb-0">
-													<span class="text-danger"> <i class="mdi mdi-arrow-bottom-right"></i> -3.65% </span>
-													<span class="text-muted">Since last week</span>
-												</div>
-											</div>
-										</div>
-										<div class="card">
-											<div class="card-body">
-												<div class="row">
-													<div class="col mt-0">
-														<h5 class="card-title">Visitors</h5>
-													</div>
+  <!-- ===== ULANGI UNTUK 4 KARTU LAINNYA ===== -->
+  <div class="col-12 col-sm-6 col-lg mb-4">
+    <div class="card h-100 border-0 shadow-sm stat-card">
+      <div class="card-body d-flex align-items-center">
+        <div class="flex-shrink-0 me-3">
+          <span class="avatar avatar-lg bg-soft-success text-success">
+            <i data-feather="shopping-cart"></i>
+          </span>
+        </div>
+        <div class="flex-grow-1">
+          <p class="mb-1 text-muted">Total Order</p>
+          <h3 class="mb-1">10,293</h3>
+          <small class="text-success">
+            <i data-feather="trending-up" width="14"></i>
+            <strong>1.3%</strong> Up from past week
+          </small>
+        </div>
+      </div>
+    </div>
+  </div>
 
-													<div class="col-auto">
-														<div class="stat text-primary">
-															<i class="align-middle" data-feather="users"></i>
-														</div>
-													</div>
-												</div>
-												<h1 class="mt-1 mb-3">14.212</h1>
-												<div class="mb-0">
-													<span class="text-success"> <i class="mdi mdi-arrow-bottom-right"></i> 5.25% </span>
-													<span class="text-muted">Since last week</span>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-6">
-										<div class="card">
-											<div class="card-body">
-												<div class="row">
-													<div class="col mt-0">
-														<h5 class="card-title">Earnings</h5>
-													</div>
+  <div class="col-12 col-sm-6 col-lg mb-4">
+    <div class="card h-100 border-0 shadow-sm stat-card">
+      <div class="card-body d-flex align-items-center">
+        <div class="flex-shrink-0 me-3">
+          <span class="avatar avatar-lg bg-soft-info text-info">
+            <i data-feather="dollar-sign"></i>
+          </span>
+        </div>
+        <div class="flex-grow-1">
+          <p class="mb-1 text-muted">Total Sales</p>
+          <h3 class="mb-1">$89,000</h3>
+          <small class="text-danger">
+            <i data-feather="trending-down" width="14"></i>
+            <strong>4.3%</strong> Down from yesterday
+          </small>
+        </div>
+      </div>
+    </div>
+  </div>
 
-													<div class="col-auto">
-														<div class="stat text-primary">
-															<i class="align-middle" data-feather="dollar-sign"></i>
-														</div>
-													</div>
-												</div>
-												<h1 class="mt-1 mb-3">$21.300</h1>
-												<div class="mb-0">
-													<span class="text-success"> <i class="mdi mdi-arrow-bottom-right"></i> 6.65% </span>
-													<span class="text-muted">Since last week</span>
-												</div>
-											</div>
-										</div>
-										<div class="card">
-											<div class="card-body">
-												<div class="row">
-													<div class="col mt-0">
-														<h5 class="card-title">Orders</h5>
-													</div>
+  <div class="col-12 col-sm-6 col-lg mb-4">
+    <div class="card h-100 border-0 shadow-sm stat-card">
+      <div class="card-body d-flex align-items-center">
+        <div class="flex-shrink-0 me-3">
+          <span class="avatar avatar-lg bg-soft-warning text-warning">
+            <i data-feather="clock"></i>
+          </span>
+        </div>
+        <div class="flex-grow-1">
+          <p class="mb-1 text-muted">Total Pending</p>
+          <h3 class="mb-1">2,040</h3>
+          <small class="text-success">
+            <i data-feather="trending-up" width="14"></i>
+            <strong>1.8%</strong> Up from yesterday
+          </small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /stat card -->
+<div class="card shadow-sm">
+  <div class="card-header d-flex justify-content-between align-items-center">
+    <h2 class="mb-0">Sales Details</h2>
+    <div class="d-flex align-items-center gap-2">
+      <!-- Month selector -->
+      <div class="dropdown">
+        <a class="btn btn-sm btn-outline-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+          October
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">September</a></li>
+          <li><a class="dropdown-item" href="#">October</a></li>
+          <li><a class="dropdown-item" href="#">November</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="card-body pt-2">
+    <canvas id="salesChart" height="140"></canvas>
+  </div>
+</div>
 
-													<div class="col-auto">
-														<div class="stat text-primary">
-															<i class="align-middle" data-feather="shopping-cart"></i>
-														</div>
-													</div>
-												</div>
-												<h1 class="mt-1 mb-3">64</h1>
-												<div class="mb-0">
-													<span class="text-danger"> <i class="mdi mdi-arrow-bottom-right"></i> -2.25% </span>
-													<span class="text-muted">Since last week</span>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+{{-- Tabel barang --}}
+<div class="card shadow-sm">
+  <div class="card-header bg-transparent d-flex justify-content-between align-items-center">
+    <h5 class="mb-0">Deals Details</h5>
+    <div class="d-flex align-items-center gap-2">
+      <span class="text-muted small">October</span>
+      <i data-feather="chevron-down" width="16"></i>
+    </div>
+  </div>
 
-						<div class="col-xl-6 col-xxl-7">
-							<div class="card flex-fill w-100">
-								<div class="card-header">
-
-									<h5 class="card-title mb-0">Recent Movement</h5>
-								</div>
-								<div class="card-body py-3">
-									<div class="chart chart-sm">
-										<canvas id="chartjs-dashboard-line"></canvas>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="col-12 col-md-6 col-xxl-3 d-flex order-2 order-xxl-3">
-							<div class="card flex-fill w-100">
-								<div class="card-header">
-
-									<h5 class="card-title mb-0">Browser Usage</h5>
-								</div>
-								<div class="card-body d-flex">
-									<div class="align-self-center w-100">
-										<div class="py-3">
-											<div class="chart chart-xs">
-												<canvas id="chartjs-dashboard-pie"></canvas>
-											</div>
-										</div>
-
-										<table class="table mb-0">
-											<tbody>
-												<tr>
-													<td>Chrome</td>
-													<td class="text-end">4306</td>
-												</tr>
-												<tr>
-													<td>Firefox</td>
-													<td class="text-end">3801</td>
-												</tr>
-												<tr>
-													<td>IE</td>
-													<td class="text-end">1689</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-12 col-md-12 col-xxl-6 d-flex order-3 order-xxl-2">
-							<div class="card flex-fill w-100">
-								<div class="card-header">
-
-									<h5 class="card-title mb-0">Real-Time</h5>
-								</div>
-								<div class="card-body px-4">
-									<div id="world_map" style="height:350px;"></div>
-								</div>
-							</div>
-						</div>
-						<div class="col-12 col-md-6 col-xxl-3 d-flex order-1 order-xxl-1">
-							<div class="card flex-fill">
-								<div class="card-header">
-
-									<h5 class="card-title mb-0">Calendar</h5>
-								</div>
-								<div class="card-body d-flex">
-									<div class="align-self-center w-100">
-										<div class="chart">
-											<div id="datetimepicker-dashboard"></div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="col-12 col-lg-8 col-xxl-9 d-flex">
-							<div class="card flex-fill">
-								<div class="card-header">
-
-									<h5 class="card-title mb-0">Latest Projects</h5>
-								</div>
-								<table class="table table-hover my-0">
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th class="d-none d-xl-table-cell">Start Date</th>
-											<th class="d-none d-xl-table-cell">End Date</th>
-											<th>Status</th>
-											<th class="d-none d-md-table-cell">Assignee</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Project Apollo</td>
-											<td class="d-none d-xl-table-cell">01/01/2023</td>
-											<td class="d-none d-xl-table-cell">31/06/2023</td>
-											<td><span class="badge bg-success">Done</span></td>
-											<td class="d-none d-md-table-cell">Vanessa Tucker</td>
-										</tr>
-										<tr>
-											<td>Project Fireball</td>
-											<td class="d-none d-xl-table-cell">01/01/2023</td>
-											<td class="d-none d-xl-table-cell">31/06/2023</td>
-											<td><span class="badge bg-danger">Cancelled</span></td>
-											<td class="d-none d-md-table-cell">William Harris</td>
-										</tr>
-										<tr>
-											<td>Project Hades</td>
-											<td class="d-none d-xl-table-cell">01/01/2023</td>
-											<td class="d-none d-xl-table-cell">31/06/2023</td>
-											<td><span class="badge bg-success">Done</span></td>
-											<td class="d-none d-md-table-cell">Sharon Lessman</td>
-										</tr>
-										<tr>
-											<td>Project Nitro</td>
-											<td class="d-none d-xl-table-cell">01/01/2023</td>
-											<td class="d-none d-xl-table-cell">31/06/2023</td>
-											<td><span class="badge bg-warning">In progress</span></td>
-											<td class="d-none d-md-table-cell">Vanessa Tucker</td>
-										</tr>
-										<tr>
-											<td>Project Phoenix</td>
-											<td class="d-none d-xl-table-cell">01/01/2023</td>
-											<td class="d-none d-xl-table-cell">31/06/2023</td>
-											<td><span class="badge bg-success">Done</span></td>
-											<td class="d-none d-md-table-cell">William Harris</td>
-										</tr>
-										<tr>
-											<td>Project X</td>
-											<td class="d-none d-xl-table-cell">01/01/2023</td>
-											<td class="d-none d-xl-table-cell">31/06/2023</td>
-											<td><span class="badge bg-success">Done</span></td>
-											<td class="d-none d-md-table-cell">Sharon Lessman</td>
-										</tr>
-										<tr>
-											<td>Project Romeo</td>
-											<td class="d-none d-xl-table-cell">01/01/2023</td>
-											<td class="d-none d-xl-table-cell">31/06/2023</td>
-											<td><span class="badge bg-success">Done</span></td>
-											<td class="d-none d-md-table-cell">Christina Mason</td>
-										</tr>
-										<tr>
-											<td>Project Wombat</td>
-											<td class="d-none d-xl-table-cell">01/01/2023</td>
-											<td class="d-none d-xl-table-cell">31/06/2023</td>
-											<td><span class="badge bg-warning">In progress</span></td>
-											<td class="d-none d-md-table-cell">William Harris</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						</div>
-						<div class="col-12 col-lg-4 col-xxl-3 d-flex">
-							<div class="card flex-fill w-100">
-								<div class="card-header">
-
-									<h5 class="card-title mb-0">Monthly Sales</h5>
-								</div>
-								<div class="card-body d-flex w-100">
-									<div class="align-self-center chart chart-lg">
-										<canvas id="chartjs-dashboard-bar"></canvas>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+  <div class="card-body p-0">
+    <div class="table-responsive">
+      <table class="table table-hover mb-0 custom-table">
+        <thead class="table-light custom-thead">
+          <tr>
+            <th>Product Name</th>
+            <th>Location</th>
+            <th>Date - Time</th>
+            <th>Piece</th>
+            <th>Amount</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="align-middle">
+				<img src="{{ asset('img/products/apple-watch.jpg') }}" 
+				alt="Apple Watch" 
+				class="rounded" 
+				width="40" height="40">
+				<strong>Apple Watch</strong>
+			</td>
+            <td>6096 Marjolaine Landing</td>
+            <td>12.09.2019 - 12:53 PM</td>
+            <td>423</td>
+            <td><strong>$34,295</strong></td>
+            <td><span class="badge bg-soft-success text-success">Delivered</span></td>
+          </tr>
+          <!--  ULANG BARIS LAINNYA  -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
 @endsection
 
 @push('scripts')
@@ -346,5 +235,90 @@ document.addEventListener("DOMContentLoaded", function() {
         applyTheme(current === 'light' ? 'dark' : 'light');
     });
 });
+</script>
+<script>
+	document.querySelector('.arrow-circle').addEventListener('click', function (e) {
+  e.preventDefault();
+  bootstrap.Dropdown.getOrCreateInstance(
+    document.getElementById('userDropdown')
+  ).toggle();
+});
+</script>
+
+{{-- Script untuk chart --}}
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script>
+  const ctx = document.getElementById('salesChart');
+
+  /* 1. Label bawah = interval 5k (5k-60k) */
+  const labels = Array.from({length:12}, (_,i) => (i+1)*5 + 'k');
+
+  /* 2. Banyak titik acak (bukan kelipatan 5k) → garis tajam */
+  const rawX = [7800, 14200, 21389, 24750, 26330, 28990, 32400, 35670, 38200, 41350, 44700, 48650];
+  const dataY = [52, 58, 73, 69, 81, 76, 88, 66, 92, 59, 88, 97]; // %
+
+  /* 3. Gradient area */
+  const gradient = ctx.getContext('2d').createLinearGradient(0, 0, 0, 160);
+  gradient.addColorStop(0, 'rgba(13, 110, 253, .45)');
+  gradient.addColorStop(1, 'rgba(13, 110, 253, 0)');
+
+  new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: labels,
+      datasets: [{
+        data: dataY,
+        borderColor: '#0d6efd',
+        backgroundColor: gradient,
+        fill: true,
+        tension: 0,               // garis tajam
+        pointRadius: 3,
+        pointHoverRadius: 5,
+        pointBackgroundColor: '#0d6efd',
+        pointBorderColor: '#fff',
+        pointBorderWidth: 2
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      interaction: { intersect: false, mode: 'point' },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: '#0d6efd',
+          titleColor: '#fff',
+          bodyColor: '#fff',
+          padding: 6,
+          cornerRadius: 4,
+          displayColors: false,
+          position: 'average',
+          yAlign: 'bottom',
+          callbacks: {
+            /* 4. Hanya nilai X asli (angka) */
+            label: () => null,
+            title: (items) => rawX[items[0].dataIndex].toLocaleString()
+          }
+        }
+      },
+      scales: {
+        x: {
+          grid: { display: false, drawBorder: false },
+          ticks: { color: '#6c757d' }
+        },
+        y: {
+          beginAtZero: false,
+          min: 40,
+          max: 100,
+          ticks: {
+            stepSize: 10,
+            color: '#6c757d',
+            callback: val => val + '%'
+          },
+          grid: { color: '#e9ecef', drawBorder: false }
+        }
+      }
+    }
+  });
 </script>
 @endpush
